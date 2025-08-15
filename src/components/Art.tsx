@@ -24,6 +24,20 @@ const Art = () => {
       stagger: 0.2,
       ease: "power2.inOut",
     });
+
+    maskTimeline.to(".masked-img", {
+      scale: 1.3,
+      maskPosition: "center",
+      maskSize: "400%",
+      duration: 1,
+      ease: "power1.inOut",
+    });
+
+    maskTimeline.to("#masked-content", {
+      opacity: 1,
+      duration: 1,
+      ease: "power1.inOut",
+    });
   });
   return (
     <div id="art">
